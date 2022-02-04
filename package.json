@@ -1,7 +1,7 @@
 {
-  "name": "shape-test",
+  "name": "age-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "solar system age utility",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -31,5 +31,13 @@
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meilar/age-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meilar/age-calc/issues"
+  },
+  "homepage": "https://github.com/meilar/age-calc#readme"
 }
