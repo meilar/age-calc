@@ -1,3 +1,5 @@
-export default function testCode() {
-  return "hello world"
+export default class SolarAge {
+  constructor(age) {
+    this.earthAge = age;
+  }
 }
