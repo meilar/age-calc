@@ -6,5 +6,10 @@ describe('SolarAge', () => {
   test('should create new SolarAge class object with earth age property', () => {
     let output = new SolarAge(1);
     expect(output.earthAge).toEqual(1);
-  });       
+  });
+
+    test('should create new SolarAge class object with jupiter age property', () => {
+    let output = new SolarAge(12);
+    expect(output.jupiterAge).toEqual(1);
+  });           
 });
