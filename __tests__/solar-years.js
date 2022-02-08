@@ -66,6 +66,6 @@ describe('SolarHuman', () => {
 
   test("should contain a method to update expected lifespan and associated properties", () => {
     x.updateExpectedLifespan(90);
-    expect(x.lifespanDelta.earth).toEqual(10);
+    expect(x.lifespanDelta.earthYear).toEqual(10);
   });
 });

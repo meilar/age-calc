@@ -27,4 +27,14 @@ export class SolarHuman {
       this.reachedLifespan = true;
     }
   }
+
+  updateExpectedLifespan (newEstimate) {
+    this.expectedYears = newEstimate;
+    this.updateLifespanFlag;
+    if (this.currentAge >= this.expectedYears) {
+      this.lifespanDelta = new SolarYears (this.currentAge - this.expectedYears);
+    } else {
+      this.lifespanDelta = new SolarYears (this.expectedYears - this.currentAge);
+    }
+  }
 }
