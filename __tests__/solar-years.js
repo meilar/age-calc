@@ -44,5 +44,10 @@ describe('SolarCitizen', () => {
   test("should contain an expected lifespan property", () => {
     let x = new SolarCitizen(1);
     expect(x.expectedYears).toEqual(80);
-  })
+  });
+
+  test("should contain an reachedLifespan boolean property", () => {
+    let x = new SolarCitizen(1);
+    expect(x.reachedLifespan).toEqual(false);
+  });
 });
