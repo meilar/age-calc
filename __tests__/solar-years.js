@@ -1,5 +1,6 @@
 import { TestScheduler } from 'jest';
-import SolarYears from '../src/solar-years.js';
+import {SolarYears, SolarCitizen } from '../src/solar-years.js';
+
 
 describe('SolarYears', () => {
 
@@ -21,4 +22,13 @@ describe('SolarYears', () => {
     expect(output.marsYear).toEqual(53);
     expect(output.jupiterYear).toEqual(8); 
   });           
+});
+
+describe('SolarCitizen', () => {
+
+  test("should create new SolarCitizen object", () => {
+    let testObject = new SolarCitizen();
+    expect(testObject).toBeDefined();
+  }); 
+
 });

@@ -1,4 +1,4 @@
-export default class SolarYears {
+export class SolarYears {
   constructor(age) {
     this.earthDays = age*365;
     this.mercuryYear = parseInt(this.earthDays/88);
