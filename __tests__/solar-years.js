@@ -35,4 +35,9 @@ describe('SolarCitizen', () => {
     let x = new SolarCitizen(10);
     expect(x.currentAge).toEqual(10);
   });
+
+  test("should contain a SolarYears instance stored as a solarAge property", () => {
+    let x = new SolarCitizen(100);
+    expect(x.solarAge.jupiterYear).toEqual(8);
+  });
 });
