@@ -9,19 +9,17 @@ export class SolarYears {
   }
 }
 
-export class SolarCitizen {
+export class SolarHuman {
   constructor(age) {
     this.currentAge = age;
     this.solarAge = new SolarYears(age);
     this.expectedYears = 80;
     this.reachedLifespan = false;
-
     if (this.currentAge >= this.expectedYears) {
-      this.lifespanDelta = new SolarYears(age - this.expectedYears);
+      this.lifespanDelta = new SolarYears (age - this.expectedYears);
     } else {
-      this.lifespanDelta = new SolarYears(this.expectedYears - age);
+      this.lifespanDelta = new SolarYears (this.expectedYears - age);
     }
-
   }
 
   updateLifespanFlag () {

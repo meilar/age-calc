@@ -1,5 +1,5 @@
 import { TestScheduler } from 'jest';
-import {SolarYears, SolarCitizen } from '../src/solar-years.js';
+import {SolarYears, SolarHuman } from '../src/solar-years.js';
 
 
 describe('SolarYears', () => {
@@ -24,14 +24,14 @@ describe('SolarYears', () => {
   });           
 });
 
-describe('SolarCitizen', () => {
+describe('SolarHuman', () => {
   let x;
   
   beforeEach(() => {
-    x = new SolarCitizen(100);
+    x = new SolarHuman(100);
   });
 
-  test("should create new SolarCitizen object", () => {
+  test("should create new SolarHuman object", () => {
     expect(x).toBeDefined();
   }); 
 
@@ -62,5 +62,10 @@ describe('SolarCitizen', () => {
 
   test("should contain a delta from expected lifespan in solar ages property", () => {
     expect(x.lifespanDelta.mercuryYear).toEqual(82);
+  });
+
+  test("should contain a method to update expected lifespan and associated properties", () => {
+    x.updateExpectedLifespan(90);
+    expect(x.lifespanDelta.earth).toEqual(10);
   });
 });
