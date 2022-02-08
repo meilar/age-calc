@@ -1,1 +1,9 @@
-/* custom stylesheet */
+#intro {
+ text-align: center;
+}
+
+#intro, .row {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
