@@ -11,6 +11,6 @@ export class SolarYears {
 
 export class SolarCitizen {
   constructor(age) {
-
+    this.currentAge = age;
   }
 }
