@@ -40,4 +40,9 @@ describe('SolarCitizen', () => {
     let x = new SolarCitizen(100);
     expect(x.solarAge.jupiterYear).toEqual(8);
   });
+
+  test("should contain an expected lifespan property", () => {
+    let x = new SolarCitizen(1);
+    expect(x.expectedYears).toEqual(80);
+  })
 });
