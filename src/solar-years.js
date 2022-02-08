@@ -9,3 +9,6 @@ export class SolarYears {
   }
 }
 
+export class SolarCitizen extends SolarYears {
+
+}
