@@ -13,5 +13,6 @@ export class SolarCitizen {
   constructor(age) {
     this.currentAge = age;
     this.solarAge = new SolarYears(age);
+    this.expectedYears = 80;
   }
 }
