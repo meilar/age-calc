@@ -3,3 +3,4 @@ node_modules/
 dist/
 SPEX.md
 coverage/
+package-lock.json

@@ -57,6 +57,10 @@ describe('SolarCitizen', () => {
   });
 
   test("should contain a delta from expected lifespan property", () => {
-    expect(x.lifespanDelta).toEqual(20);
+    expect(x.lifespanDelta.earthYear).toEqual(20);
+  });
+
+  test("should contain a delta from expected lifespan in solar ages property", () => {
+    expect(x.lifespanDelta.mercuryYear).toEqual(82);
   });
 });
