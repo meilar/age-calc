@@ -25,29 +25,34 @@ describe('SolarYears', () => {
 });
 
 describe('SolarCitizen', () => {
+  let x;
+  
+  beforeEach(() => {
+    x = new SolarCitizen(100);
+  });
 
   test("should create new SolarCitizen object", () => {
-    let testObject = new SolarCitizen();
-    expect(testObject).toBeDefined();
+    expect(x).toBeDefined();
   }); 
 
   test("should contain a current age property", () => {
-    let x = new SolarCitizen(10);
-    expect(x.currentAge).toEqual(10);
+    expect(x.currentAge).toEqual(100);
   });
 
   test("should contain a SolarYears instance stored as a solarAge property", () => {
-    let x = new SolarCitizen(100);
     expect(x.solarAge.jupiterYear).toEqual(8);
   });
 
   test("should contain an expected lifespan property", () => {
-    let x = new SolarCitizen(1);
     expect(x.expectedYears).toEqual(80);
   });
 
   test("should contain an reachedLifespan boolean property", () => {
-    let x = new SolarCitizen(1);
     expect(x.reachedLifespan).toEqual(false);
+  });
+
+  test("should contain a method to update boolean if at or over lifespan", () => {
+    x.updateLifespanFlag();
+    expect(x.reachedLifespan).toEqual(true);
   });
 });
