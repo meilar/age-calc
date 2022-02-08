@@ -16,5 +16,10 @@ export class SolarCitizen {
     this.expectedYears = 80;
     this.reachedLifespan = false;
   }
-  
+
+  updateLifespanFlag () {
+    if (this.currentAge >= this.expectedYears) {
+      this.reachedLifespan = true;
+    }
+  }
 }
