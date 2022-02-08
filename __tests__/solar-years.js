@@ -55,4 +55,8 @@ describe('SolarCitizen', () => {
     x.updateLifespanFlag();
     expect(x.reachedLifespan).toEqual(true);
   });
+
+  test("should contain a delta from expected lifespan property", () => {
+    expect(x.lifespanDelta).toEqual(20);
+  });
 });
