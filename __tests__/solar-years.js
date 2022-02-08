@@ -31,4 +31,8 @@ describe('SolarCitizen', () => {
     expect(testObject).toBeDefined();
   }); 
 
+  test("should contain a current age property", () => {
+    let x = new SolarCitizen(10);
+    expect(x.currentAge).toEqual(10);
+  });
 });

@@ -1,6 +1,6 @@
 export class SolarYears {
-  constructor(age) {
-    this.earthDays = age*365;
+  constructor(years) {
+    this.earthDays = years*365;
     this.mercuryYear = parseInt(this.earthDays/88);
     this.venusYear = parseInt(this.earthDays/225);
     this.earthYear = parseInt(this.earthDays/365);
@@ -9,6 +9,8 @@ export class SolarYears {
   }
 }
 
-export class SolarCitizen extends SolarYears {
+export class SolarCitizen {
+  constructor(age) {
 
+  }
 }
