@@ -25,3 +25,5 @@ describe('SolarAge', () => {
     expect(output.neptuneAge).toEqual(0);    
   });           
 });
+
+// resuming work
