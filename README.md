@@ -1,9 +1,9 @@
 <h1 align="center">Solar System Age Calculator</h1>
 
-Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](www.mattheweilar.com)
+Matthew Eilar | [LinkedIn](https://www.linkedin.com/in/eilar-503/) | [email](mailto:<meilar@gmail.com>) | [website](https://www.mattheweilar.com)
 
 ## About this project
-{SCREENSHOT}
+![Screenshot of age calculator](/age_calc.png)
 
 This project was written to fulfill my [Epicodus](www.epicodus.com) week 5 code review. 
 
@@ -29,9 +29,9 @@ This site incorporates the following frameworks and languages:
 - jQuery 3.6.0
 - Bootstrap 4.5
 - Node Package Manager/Node.js
-- A full list of libraries and dependencies can be viewed on this project's `package.json` configuration file
+- A full list of libraries and dependencies can be viewed in this project's `package.json` configuration file
 
-The following development tools were used to develop this page:
+The following tools were used to develop this page:
 
 - VS Code
 - Google Chrome
@@ -39,6 +39,7 @@ The following development tools were used to develop this page:
 
 
 ## Known Issues
+There is no input validation, which means that the output fields can look funny if you click through without answering the questions.
 
 ## Acknowledgements
 
