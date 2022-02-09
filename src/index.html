@@ -1,18 +1,38 @@
 <body>
   <div class="container">
     <h1 class="text-center">Solar System Age Calculator</h1>
-    <div id="intro">
-        <p class="text-center">This calculator allows you to contemplate just how little time we have to be alive on this stubby blue school bus. If you wouldn't mind helping us by answering a few questions...</p>
+    <div id="intro" class="content-tile">
+        <p class="text-justify">This calculator allows you to contemplate just how little time we have to be alive on this stubby blue school bus. If you wouldn't mind helping us by answering a few questions...</p>
         <div class="row">
-          <div class="col-sm-4">
-            <div class="btn btn-light">"Sure"</div>
+          <div class="col-sm-6">
+            <div class="btn btn-light intro-yes">"Sure"</div>
           </div>
-          <div class="col-sm-4">
-          </div>
-          <div class="col-sm-4">
-            <div class="btn btn-light">"I'd rather not"</div>  
+          <div class="col-sm-6">
+            <div class="btn btn-light" id="intro-no">I'd rather not"</div>  
           </div>
         </div>
+    </div>
+    <div id="opt-out" class="content-tile hidden text-center">
+      <p>That may be a wise choice. If you decide differently, click the button below.</p>
+      <div class="btn btn-light intro-yes">"Let's go"</div>
+    </div>
+    <div class="content-tile hidden" id="lifestyle">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input id="user-name" type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="col">
+            <input id="user-age" type="number" class="form-control" placeholder="Enter your age in years">
+          </div>
+          <div class="col">
+            <div class="btn btn-light" id="form-yes">"Let's go"</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="age-result" class="content-tile hidden">
+
     </div>
   </div>
 </body>
