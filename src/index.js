@@ -20,12 +20,18 @@ function showAgeResult() {
   $("#mars-age").text(`${user.solarAge.marsYear}`);
   $("#venus-age").text(`${user.solarAge.venusYear}`);
   $("#merc-age").text(`${user.solarAge.mercuryYear}`);
-  $("#jup-age").text(`${user.solarAge.jupYear}`);
+  $("#jup-age").text(`${user.solarAge.jupiterYear}`);
+  $("#intro2").removeClass("hidden");
 }
 
-$("#intro-no").on("click", function() {
+function showDelta() {
+  alert();
+}
+
+$(".intro-no").on("click", function() {
   $("#intro").addClass("hidden");
   $("#opt-out").removeClass("hidden");
+  $("#lifestyle").addClass("hidden");
 });
 
 $(".intro-yes").on("click", function() {
@@ -34,9 +40,34 @@ $(".intro-yes").on("click", function() {
   $("#lifestyle").removeClass("hidden");
 });
 
+$("#retry").on("click", function() {
+  location.reload(true);
+});
+
 $("#form-yes").on("click", function() {
   $("#lifestyle").addClass("hidden");
   calculateAge();
   showAgeResult();
 });
 
+$(".intro-yes2").on("click", function() {
+  $("#intro2").addClass("hidden");
+  $("#age-result").addClass("hidden");
+  $("#expected").removeClass("hidden");
+});
+
+$("#intro-no2").on("click", function() {
+  $("#opt-out2").removeClass("hidden");
+  $("#intro2").addClass("hidden");  
+  $("#age-result").addClass("hidden");
+  showDelta();
+});
+
+$("#ready").on("click", function() {
+  showDelta();
+});
+
+$("#bhodi").on("click", function() {
+  $("#opt-out2").addClass("hidden");
+  showDelta();
+});
