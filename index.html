@@ -1,0 +1,86 @@
+<body>
+  <div class="container">
+    <h1 class="text-center">Solar System Age Calculator</h1>
+    <div id="intro" class="content-tile intro">
+        <p class="text-justify">This calculator allows you to contemplate just how little time we have to be alive on this stubby blue school bus. If you wouldn't mind helping us by answering a few questions...</p>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="btn btn-light intro-yes">"I'll answer."</div>
+          </div>
+          <div class="col-sm-6">
+            <div class="btn btn-light intro-no">"I'd rather not"</div>  
+          </div>
+        </div>
+    </div>
+    <div id="opt-out" class="content-tile hidden text-center">
+      <p>That is a wise choice. If you decide differently, I await.</p>
+      <div class="btn btn-light retry">"I want to start over."</div>
+    </div>
+    <div class="content-tile hidden" id="lifestyle">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input id="user-name" type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="col">
+            <input id="user-age" type="number" class="form-control" placeholder="Enter your age">
+          </div>
+          <div class="col">
+            <div class="btn btn-light" id="form-yes">"I am ready."</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="age-result" class="content-tile hidden">
+      <ul class="list-group text-center">
+        <li class="list-group-item" id="rlist-earth"><span id="earth-name"></span>, on Earth, you are <span id="earth-age"></span> years old. Wow! That's <span id="earth-days"></span> days.</li>
+        <li class="list-group-item" id="rlist-merc">On Mercury, you are <span id="merc-age"></span> years old.</li>
+        <li class="list-group-item" id="rlist-venus">On Venus, you are <span id="venus-age"></span> years old.</li>
+        <li class="list-group-item" id="rlist-mars">On Mars, you are <span id="mars-age"></span> years old.</li>
+        <li class="list-group-item" id="rlist-jup">On Jupiter, you are <span id="jup-age"></span> years old.</li>
+      </ul>
+    </div>
+    <div id="intro2" class="content-tile intro hidden">
+      <p class="text-justify">Of course, as sentient creatures, we cannot help but think about the precious time we have left. If you would like to gaze further into time, I can display to you the number of years you have left.</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="btn btn-light intro-yes2">"I want certainty."</div>
+        </div>
+        <div class="col-sm-6">
+          <div class="btn btn-light" id="intro-no2">"I pursue the dharma."</div>  
+        </div>
+      </div>
+    </div>
+    <div id="opt-out2" class="content-tile hidden text-center">
+      <p>That is a wise choice. If you decide differently, I await.</p>
+      <div class="btn btn-light" id="bhodi">"Bodhisattva, show me."</div>
+    </div>
+    <div class="content-tile hidden" id="expected">
+      <p>We will need you to provide us with your expected lifespan. We could ask you about your lifestyle habits, and apply your answers to actuarial formulas. We are not going to do that, however, because while correlations found in population level statistics can be a clue for future scientific inquiry, their primary use on an individual level is as a weapon against disempowered groups, societal inequalities disguised by the neutral-sounding language of statistics.</p>
+      <p>Describing Frederick L. Hoffman's pioneering 1896 work of actuarial science, <em>Race Traits and Tendencies of the America Negro</em>, a product of his work for the Prudential Life Insurance Company, Megan Wolff, MPH, writes: "To sell insurance policies at equal rates or for equal benefits across racial lines would offend a predominant system of social beliefs about the worth of human lives. But at the same time, only a scientific, statistical explanation could be used in the age of progress to publicly explain Prudential's decision." (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1497788/">Source</a>)
+      <p>Therefore, even in this small project, we will not engage in this flawed--morally and scientifically--method. Please enter your own expected lifespan, based on your best guess.</p>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input id="user-lifespan" type="number" class="form-control" placeholder="Enter your expected lifespan in years">
+          </div>
+          <div class="col">
+            <div class="btn btn-light" id="ready">"I am ready."</div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="delta-result" class="content-tile hidden">
+      <ul class="list-group text-center">
+        <li class="list-group-item" id="dlist-earth"></li>
+        <li class="list-group-item" id="dlist-merc"></li>
+        <li class="list-group-item" id="dlist-venus"></li>
+        <li class="list-group-item" id="dlist-mars"></li>
+        <li class="list-group-item" id="dlist-jup"></li>
+      </ul>
+      <div class="text-center">
+        <div class="btn btn-light retry text-center">"I want to start over."</div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
