@@ -1,8 +1,6 @@
 body {
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
-  background-color: rgb(2, 0, 5, 0.8);
-  background: linear-gradient(rgb(28, 4, 73, 0.2), rgba(42, 5, 112, 0.329, 0.2));
-
+  background-color: rgb(2, 0, 5, 1);
 }
 
 h1 {
@@ -26,32 +24,36 @@ h1 {
   display: none;
 }
 
-#rlist-earth {
+#delta-result .btn {
+  margin-top: 1em;
+}
+
+#rlist-earth, #dlist-earth {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/43/Caldera_de_Taburiente_La_Palma.jpg");
   background-position: -100px -600px;
   color: white;
 }
 
-#rlist-merc {
+#rlist-merc, #dlist-merc {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/37/Mercury%27s_Headshot.jpg");
   background-position: -100px -600px;
   color: red;
 }
 
-#rlist-venus {
+#rlist-venus, #dlist-venus {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/PIA23791-Venus-RealAndEnhancedContrastViews-20200608_%28cropped%29.jpg");
   background-position: -100px -600px;
   color: rgb(255, 149, 167);
 }
 
-#rlist-mars {
+#rlist-mars, #dlist-mars {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/VallesMarinerisHuge.jpg/1280px-VallesMarinerisHuge.jpg");
   background-position: -100px -1px;
   color: purple;
 }
 
-#rlist-jup {
+#rlist-jup, #dlist-jup {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Jupiter_Global_Map_%282019%29.png/1280px-Jupiter_Global_Map_%282019%29.png");
-  background-position: -100px -1200px;
+  background-position: -100px -1000px;
   color: linen;
 }

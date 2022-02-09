@@ -24,8 +24,24 @@ function showAgeResult() {
   $("#intro2").removeClass("hidden");
 }
 
+function calculateDelta() {
+  let userLifespan = $("#user-lifespan").val();
+  user.updateExpectedLifespan(userLifespan);
+}
+
 function showDelta() {
-  alert();
+  $("#delta-result").removeClass("hidden");
+  let deltaText;
+  if (user.reachedLifespan === true) {
+    deltaText = ", you have exceeded your lifespan by ";
+  } else {
+    deltaText = ", you will reach your expected lifespan in ";
+  }
+  $("#dlist-earth").text(`On Earth${deltaText}${user.lifespanDelta.earthYear} years.`);
+  $("#dlist-mars").text(`On Mars${deltaText}${user.lifespanDelta.marsYear} years.`);
+  $("#dlist-venus").text(`On Venus${deltaText}${user.lifespanDelta.venusYear} years.`);
+  $("#dlist-merc").text(`On Mercury${deltaText}${user.lifespanDelta.mercuryYear} years.`);
+  $("#dlist-jup").text(`On Jupiter${deltaText}${user.lifespanDelta.jupiterYear} years.`);
 }
 
 $(".intro-no").on("click", function() {
@@ -40,7 +56,7 @@ $(".intro-yes").on("click", function() {
   $("#lifestyle").removeClass("hidden");
 });
 
-$("#retry").on("click", function() {
+$(".retry").on("click", function() {
   location.reload(true);
 });
 
@@ -60,14 +76,16 @@ $("#intro-no2").on("click", function() {
   $("#opt-out2").removeClass("hidden");
   $("#intro2").addClass("hidden");  
   $("#age-result").addClass("hidden");
-  showDelta();
 });
 
 $("#ready").on("click", function() {
+  $("#expected").addClass("hidden");
+  calculateDelta();
   showDelta();
 });
 
 $("#bhodi").on("click", function() {
   $("#opt-out2").addClass("hidden");
+  calculateDelta();
   showDelta();
 });
