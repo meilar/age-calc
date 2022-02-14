@@ -68,4 +68,15 @@ describe('SolarHuman', () => {
     x.updateExpectedLifespan(90);
     expect(x.lifespanDelta.earthYear).toEqual(10);
   });
+
+  test("should handle the case of an updated expected lifespan greater than current age", () => {
+    x.updateExpectedLifespan(110);
+    expect(x.lifespanDelta.earthYear).toEqual(10);
+  });
+
+  test("should handle the case of a newly constructed object with a current age less than default expected lifespan", () => {
+    let x = new SolarHuman(20)
+    expect(x.lifespanDelta.earthYear).toEqual(60);
+  });
+
 });
